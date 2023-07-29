@@ -1,0 +1,41 @@
+create table student(
+std_id varchar(50) primary key,
+name varchar(50), dob date,
+ dept varchar(50),
+mob_no int,
+yos int
+);
+
+create table room(room_no varchar(50) primary key,
+room_type varchar(10),
+no_of_accom int,
+capacity int,
+floor int,
+vacancy int);
+
+create table attendance(std_id varchar(50),status varchar(20),at_date date,in_time timestamp,out_time timestamp,primary key(std_id,at_date));
+
+create table attendance(std_id varchar(50),status varchar(20),at_date date,in_time timestamp,out_time timestamp,primary key(std_id,at_date));
+
+
+INSERT INTO staff (staff_id, name, category, mob_no, salary) VALUES
+('STF001', 'Rajesh Kumar', 'office', '9876543210', 15000),
+('STF002', 'Sneha Sharma', 'cleaning', '8765432109', 12000),
+('STF003', 'Amit Singh', 'mess', '7654321098', 18000),
+('STF004', 'Neha Patel', 'office', '6543210987', 20000),
+('STF005', 'Vikram Sharma', 'office', '5432109876', 22000),
+('STF006', 'Priya Gupta', 'cleaning', '4321098765', 10000),
+('STF007', 'Anil Kumar', 'office', '3210987654', 23000),
+('STF008', 'Smita Verma', 'mess', '2109876543', 17000),
+('STF009', 'Rahul Sharma', 'office', '1098765432', 24000),
+('STF010', 'Pooja Mehta', 'cleaning', '9876543210', 11000),
+('STF011', 'Arun Singh', 'mess', '8765432109', 19000),
+('STF012', 'Rekha Reddy', 'office', '7654321098', 21000),
+('STF013', 'Ravi Kapoor', 'office', '6543210987', 25000),
+('STF014', 'Meena Patel', 'cleaning', '5432109876', 10000),
+('STF015', 'Sanjay Gupta', 'office', '4321098765', 22000),
+('STF016', 'Kavita Sharma', 'mess', '3210987654', 17000),
+('STF017', 'Alok Verma', 'office', '2109876543', 23000),
+('STF018', 'Neeta Singh', 'cleaning', '1098765432', 12000),
+('STF019', 'Rajni Sharma', 'mess', '9876543210', 20000),
+('STF020', 'Vivek Mehta', 'office', '8765432109', 24000);
